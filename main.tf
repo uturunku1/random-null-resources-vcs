@@ -46,9 +46,9 @@ resource "null_resource" "username" {
   }
 }
 
-resource "null_resource" "random_uuid" {
-  triggers = {
-    # Generate a new username each time we switch the value of the variable username
-    username = "${random_uuid.test.result}-rg"
-  }
-}
+# resource "null_resource" "random_uuid" {
+#   triggers = {
+#     # Generate a new username each time we switch the value of the variable username
+#     username = "${random_uuid.test.result}-rg"
+#   }
+# }
