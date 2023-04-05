@@ -22,9 +22,9 @@ provider "null" {
   alias = "foo"
 }
 
-resource "null_resource" "test" {
-  provider = "null.foo"
-}
+# resource "null_resource" "test" {
+#   provider = "null.foo"
+# }
 
 variable "username" {
   type = string
