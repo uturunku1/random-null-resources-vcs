@@ -34,21 +34,21 @@ resource "random_pet" "always_new_name" {
   length = 3
 }
 
-# resource "random_uuid" "test" {
-# }
-# resource "random_uuid" "test2" {
-# }
+resource "random_uuid" "test" {
+}
+resource "random_uuid" "test2" {
+}
 
-# resource "null_resource" "username" {
-#   triggers = {
-#     # Generate a new username each time we switch the value of the variable username
-#     username = var.username
-#   }
-# }
+resource "null_resource" "username" {
+  triggers = {
+    # Generate a new username each time we switch the value of the variable username
+    username = var.username
+  }
+}
 
-# resource "null_resource" "random_uuid" {
-#   triggers = {
-#     # Generate a new username each time we switch the value of the variable username
-#     username = "${random_uuid.test.result}-rg"
-#   }
-# }
+resource "null_resource" "random_uuid" {
+  triggers = {
+    # Generate a new username each time we switch the value of the variable username
+    username = "${random_uuid.test.result}-rg"
+  }
+}
