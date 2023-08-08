@@ -39,7 +39,7 @@ resource "random_uuid" "test" {
 resource "random_uuid" "test2" {
 }
 
-resource "random_uuid" "test" {
+resource "random_uuid" "test3" {
 }
 
 resource "null_resource" "username" {
