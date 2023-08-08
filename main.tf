@@ -39,6 +39,9 @@ resource "random_uuid" "test" {
 resource "random_uuid" "test2" {
 }
 
+resource "random_uuid" "test3" {
+}
+
 resource "null_resource" "username" {
   triggers = {
     # Generate a new username each time we switch the value of the variable username
