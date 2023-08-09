@@ -27,12 +27,12 @@ variable "username" {
   default = "uturunku1"
 }
 
-resource "random_pet" "always_new_name" {
-  keepers = {
-    uuid = uuid() # Force a new name each time
-  }
-  length = 3
-}
+# resource "random_pet" "always_new_name" {
+#   keepers = {
+#     uuid = uuid() # Force a new resource each time
+#   }
+#   length = 3
+# }
 
 resource "random_uuid" "test" {
 }
@@ -43,9 +43,6 @@ resource "random_uuid" "test3" {
 }
 
 resource "random_uuid" "test4" {
-}
-
-resource "random_uuid" "test5" {
 }
 
 resource "null_resource" "username" {
